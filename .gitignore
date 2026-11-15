@@ -56,9 +56,11 @@ output_files/
 *.log
 
 # -----------------------------------------------------------------------------
-# Presentation notes (shared with the team directly, not part of the repo)
+# Presentation material (shared with the team directly, not part of the repo)
 # -----------------------------------------------------------------------------
 presentation.md
+video/
+*.pptx
 
 # -----------------------------------------------------------------------------
 # Environment and secrets (none are used today; keep it that way)
