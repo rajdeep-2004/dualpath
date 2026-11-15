@@ -182,7 +182,7 @@ testbenches. Values are hexadecimal; `000c` = 12.
 ### Harvard, `prog1`: fetch and data in the same cycle (5 cycles)
 
 <p align="center">
-  <img src="docs/waveforms/harvard-prog1.png" alt="Harvard prog1 waveform: i_addr and d_addr active in the same cycle, halted after 5 cycles" width="100%">
+  <img src="docs/waveforms/harvard-prog1-signals.png" alt="Harvard prog1 waveform: i_addr and d_addr active in the same cycle, halted after 5 cycles" width="100%">
 </p>
 
 | What to look at | What it shows |
@@ -195,7 +195,7 @@ testbenches. Values are hexadecimal; `000c` = 12.
 ### Shared memory, `prog1`: one port taking turns (8 cycles)
 
 <p align="center">
-  <img src="docs/waveforms/shared-prog1.png" alt="Shared prog1 waveform: mem_addr alternates PC and data address, stall high on each LOAD/STORE, halted after 8 cycles" width="100%">
+  <img src="docs/waveforms/shared-prog1-signals.png" alt="Shared prog1 waveform: mem_addr alternates PC and data address, stall high on each LOAD/STORE, halted after 8 cycles" width="100%">
 </p>
 
 | What to look at | What it shows |
@@ -209,7 +209,7 @@ testbenches. Values are hexadecimal; `000c` = 12.
 ### Harvard, `prog2`: address decoding and memory-mapped output
 
 <p align="center">
-  <img src="docs/waveforms/harvard-prog2.png" alt="Harvard prog2 waveform: io_out becomes 5, addr_err pulses on the store to address 0x30" width="100%">
+  <img src="docs/waveforms/harvard-prog2-signals.png" alt="Harvard prog2 waveform: io_out becomes 5, addr_err pulses on the store to address 0x30" width="100%">
 </p>
 
 | What to look at | What it shows |
