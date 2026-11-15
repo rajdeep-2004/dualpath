@@ -1,2 +1,111 @@
+# =============================================================================
+# .gitignore — Harvard vs Shared Memory (Verilog / Icarus Verilog)
+# Rule of thumb: commit source (RTL, testbenches, programs, docs);
+# never commit anything a tool can regenerate.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Simulation output (regenerate with `make compare`)
+# -----------------------------------------------------------------------------
 sim/
+*.vvp
+*.vcd
+*.fst
+*.lxt
+*.lxt2
+*.ghw
+*.evcd
+results.txt
+a.out
+
+# GTKWave / Surfer session files are NOT ignored on purpose:
+# a saved *.gtkw signal layout is useful to commit.
+
+# -----------------------------------------------------------------------------
+# Other simulators and EDA tools (in case anyone runs the RTL elsewhere)
+# -----------------------------------------------------------------------------
+# Verilator
+obj_dir/
+# ModelSim / Questa
+work/
+transcript
+vsim.wlf
+*.wlf
+modelsim.ini
+# Xilinx Vivado
+.Xil/
+*.jou
+vivado*.log
+vivado*.str
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+*.ip_user_files/
+# Intel Quartus
+db/
+incremental_db/
+output_files/
+*.qws
+# Yosys / nextpnr
+*.json.bak
+*.blif
+*.asc
+*.bin
+# Generic tool logs
+*.log
+
+# -----------------------------------------------------------------------------
+# Presentation notes (shared with the team directly, not part of the repo)
+# -----------------------------------------------------------------------------
+presentation.md
+
+# -----------------------------------------------------------------------------
+# Environment and secrets (none are used today; keep it that way)
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# -----------------------------------------------------------------------------
+# Editors and IDEs
+# -----------------------------------------------------------------------------
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------------------------------------------------------------
+# Operating system files
+# -----------------------------------------------------------------------------
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# Linux
+.directory
+.Trash-*
+
+# -----------------------------------------------------------------------------
+# Archives and exported files (share these outside git)
+# -----------------------------------------------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
