@@ -75,3 +75,22 @@ talking point for the report.
   filters this warning out.
 - **Checked that the tests can fail.** Replacing the adder with a subtractor makes prog1 print
   `FAIL R3: got 65534, expected 12`.
+
+---
+
+## 2026-11-15 — Asynchronous memory reads
+
+All three memories return data in the same cycle the address is applied (combinational read).
+A single-cycle CPU needs this: the instruction must arrive, be decoded, and (for a LOAD) the data
+must come back, all before the next rising edge. With synchronous (clocked) reads, every access
+would add a cycle to both systems and blur the comparison.
+
+---
+
+## 2026-11-15 — Makefile safety checks
+
+- `PROG` must be `prog1`, `prog2` or `prog3`. Before this check, `make harvard PROG=prog9`
+  silently ran prog3 and printed PASS, which was misleading.
+- `make compare` now exits with an error and lists the failures if any of the 6 runs fails, so
+  a broken change cannot hide behind a printed table.
+- `make help` lists the commands and is the default target.
