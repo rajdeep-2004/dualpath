@@ -14,7 +14,9 @@
 ![Shared](https://img.shields.io/badge/Shared-CPI%201%20%2B%20f-cf222e)
 ![Course](https://img.shields.io/badge/Modern%20Computer%20Architecture-Project%209-orange)
 
-**[Results](#key-result)** · **[Block Diagrams](#block-diagrams)** · **[Waveforms](#simulation-waveforms)** · **[Quick Start](#quick-start)** · **[Team](#team-and-contributions)**
+### [▶ Watch the project video](https://drive.google.com/drive/folders/12jZ2ITZLnKIB4emqbeh5fj7zKt47mHCs?usp=sharing)
+
+**[Video](https://drive.google.com/drive/folders/12jZ2ITZLnKIB4emqbeh5fj7zKt47mHCs?usp=sharing)** · **[Results](#key-result)** · **[Block Diagrams](#block-diagrams)** · **[Waveforms](#simulation-waveforms)** · **[Quick Start](#quick-start)** · **[Team](#team-and-contributions)**
 
 </div>
 
@@ -96,6 +98,8 @@ assumed or calculated: it comes out of real RTL and is visible in the waveforms 
 | **Deliverable:** Block diagram | ✅ | [`docs/diagrams/`](docs/diagrams/) |
 | **Deliverable:** Simulation waveforms | ✅ | [`docs/waveforms/`](docs/waveforms/) |
 | **Deliverable:** Comparison with shared memory | ✅ | [`rtl/shared_top.v`](rtl/shared_top.v), [Key Result](#key-result) |
+| **Deliverable:** Project report | ✅ | [`docs/report.pdf`](docs/report.pdf) |
+| **Deliverable:** Project video | ✅ | [Google Drive](https://drive.google.com/drive/folders/12jZ2ITZLnKIB4emqbeh5fj7zKt47mHCs?usp=sharing) |
 
 | Evaluation focus | How this project demonstrates it |
 |---|---|
